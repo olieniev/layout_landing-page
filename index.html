@@ -37,7 +37,7 @@
               class="top-bar__logo">
             </a>
             <div class="top-bar__icons">
-              <a href="#" class="icon icon--phone"></a>
+              <a href="tel:+123455555555" class="icon icon--phone"></a>
               <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
@@ -69,7 +69,7 @@
               <li class="nav__item">
                 <a href="#" class="nav__link">Login</a>
               </li>
-              <li class="nav__item">
+              <li class="#recommended">
                 <a href="#" class="nav__link">Cart(0)</a>
               </li>
             </ul>
@@ -207,20 +207,27 @@
                 method="post"
                 class="contact-us__form"
               >
-                <textarea
+                <input
                 name="name"
                 placeholder="Name"
                 class="contact-us__input"
-                ></textarea>
-                <textarea
+                maxlength="50"
+                required
+                ></input>
+                <input
+                type="email"
                 name="email"
                 placeholder="Email"
                 class="contact-us__input"
-                ></textarea>
+                ></input>
                 <textarea
+                type="text"
                 name="message"
                 placeholder="Message"
                 class="contact-us__input"
+                minlength="10"
+                maxlength="500"
+                required
                 ></textarea>
                 <button class="contact-us__button btn">Send</button>
               </form>
@@ -230,7 +237,7 @@
                 <p class="contact-us__contact-name">Email</p>
                 <a href="tel:+12345555555" class="contact-us__contact">hello@nothing.com</a>
                 <p class="contact-us__contact-name">Address</p>
-                <p class="contact-us__contact">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</p>
+                <a href="https://maps.app.goo.gl/npUYsLB442pEKJ3eA" class="contact-us__contact">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</a>
               </div>
             </div>
           </section>
