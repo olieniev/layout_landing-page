@@ -205,6 +205,7 @@
               <form
                 action="#"
                 method="post"
+                onsubmit="return false;"
                 class="contact-us__form"
               >
                 <input
@@ -235,9 +236,13 @@
                 <p class="contact-us__contact-name">Phone</p>
                 <a href="tel:+12345555555" class="contact-us__contact">+1 234 5555-55-55</a>
                 <p class="contact-us__contact-name">Email</p>
-                <a href="tel:+12345555555" class="contact-us__contact">hello@nothing.com</a>
+                <a href="mailto:hello@nothing.com" class="contact-us__contact">hello@nothing.com</a>
                 <p class="contact-us__contact-name">Address</p>
-                <a href="https://maps.app.goo.gl/npUYsLB442pEKJ3eA" class="contact-us__contact">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</a>
+                <a
+                  href="https://maps.app.goo.gl/npUYsLB442pEKJ3eA"
+                  class="contact-us__contact"
+                  target="_blank"
+                >400 first ave.<br>suite 700<br>Minneapolis, MN 55401</a>
               </div>
             </div>
           </section>
